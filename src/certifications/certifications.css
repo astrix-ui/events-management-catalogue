@@ -1,0 +1,34 @@
+.certifications-container {
+    text-align: center;
+    width: 70%;
+    margin:30px auto;
+    
+    padding: 40px 20px;
+  }
+  
+  .certifications-container h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .certifications-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .certifications-logos img {
+    max-width: 80px; /* Adjust size */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .certifications-logos img:hover {
+    transform: scale(1.1);
+  }
+  

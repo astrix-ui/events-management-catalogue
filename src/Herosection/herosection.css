@@ -1,0 +1,132 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sec-beige);
+  border-radius: 20px;
+  /* padding: 50px; */
+  width: 80%;
+  /* height: 50vh; */
+  flex-direction: row;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.hero-content {
+  width: 50%;
+  padding: 40px;
+  gap: 10px;
+  /* margin-left: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: left;
+  /* width: 70%; */
+  color: #000000;
+  line-height: 1.2em;
+  /* margin: auto; */
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  color: #000000;
+  text-align: left;
+  width: 70%;
+  /* margin: auto; */
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.hero-content strong {
+  font-weight: bold;
+}
+
+.hero-button {
+  background-color: #f58220;
+  color: white;
+  padding: 12px 20px;
+  text-align: left;
+  margin-left: 80px;
+  font-size: 16px;
+  border: none;
+  display: inline;
+  width: fit-content;
+  /* margin-top: 30px; */
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #d46a1b;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  border-radius: 20px;
+  aspect-ratio: 9/10;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 0px 20px 20px 0px;
+  /* height: auto; */
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-image {
+    display: none;
+  }
+  .hero-content {
+    width: 75%;
+  }
+  .hero-content h1,
+  .hero-content p {
+    text-align: center;
+    margin-left: 0;
+    margin: auto;
+  }
+  .hero-button {
+    margin-left: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .certifications-container h2 {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .certifications-container {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+    padding: 40px 20px;
+  }
+
+  .hero-container {
+    width: 95%;
+  }
+  .hero-content{
+    width: 100%;
+  }
+  .hero-content h1{
+    font-size: 1.7em;
+}
+.hero-content p{
+    font-size: 1em;
+}
+.certifications-logos img {
+    max-width: 50px!important;
+}
+
+}

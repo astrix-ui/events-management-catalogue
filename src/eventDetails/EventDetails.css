@@ -1,0 +1,83 @@
+.event-details-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.event-details-image {
+  width: 100%;
+  max-width: 800px; /* Ensures a reasonable max size */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for event title */
+.event-details-container h1 {
+  margin: 20px auto;
+  font-size: 3em;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+/* Style for event details */
+.event-details-container p {
+  margin: 20px auto;
+  font-size: 1.2em;
+  width: 80%;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Back button styles */
+.back-button {
+  background-color: #929292;
+  color: white;
+  border: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: #b4b4b4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-details-container h1 {
+    font-size: 2.5em;
+  }
+
+  .event-details-container p {
+    font-size: 1em;
+    width: 90%;
+  }
+
+  .back-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-details-container h1 {
+    font-size: 1.5em;
+  }
+
+  .event-details-container p {
+    font-size: 1em;
+    width: 95%;
+  }
+
+  .back-button {
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

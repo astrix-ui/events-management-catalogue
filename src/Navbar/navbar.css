@@ -1,0 +1,72 @@
+/* General Navbar Styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 25px 5%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Logo Styling */
+#logo-img {
+    width: 100px;
+}
+
+/* Desktop Nav Items */
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.nav-items li a:hover {
+    color: rgb(116, 103, 59);
+}
+
+/* Mobile Menu Button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#toggle-img {
+    width: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    .nav-items {
+        display: none; /* Hide menu initially */
+        position: absolute;
+        top: 60px;
+        right: 5%;
+        width: 50%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-items.open {
+        display: flex; /* Show when menu is open */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
