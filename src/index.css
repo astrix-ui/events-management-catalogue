@@ -2,11 +2,11 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--bg-dark);
+  background-color: var(--bg);
   margin-bottom:50px;
   color: var(--text-on-dark);
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 10px rgba(88, 88, 88, 0.433);
+  /* text-shadow: 1px 1px 10px rgba(88, 88, 88, 0.433); */
 }
 html, body {
   height: 100%;
